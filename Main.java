@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Ex5_C2 {
+public class Main {
 
     public static ArrayList<String> data = new ArrayList<>();
 
@@ -22,9 +22,18 @@ public class Ex5_C2 {
 
             case "search":
                 myHash.search(num[1]);
+                break;
 
             case "delete":
                 myHash.delete(num[1]);
+                break;
+
+            case "showcmd":
+                myHash.showcmd();
+                break;
+
+            case "quit":
+                break;
 
             default:
                 System.out.print("有効なコマンドを入力してください。(”showcmd”で利用可能なコマンド一覧が表示できます)");
