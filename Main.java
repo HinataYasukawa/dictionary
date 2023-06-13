@@ -13,13 +13,16 @@ public class Main {
         MyHashC2 myHash = new MyHashC2();
 
         while (con) {
+            System.out.print("input:");
             switch (command) {
                 case "insert":
                     myHash.insert(num);
+                    System.out.println(num + " was inserted");
                     break;
 
                 case "insertO":
                     myHash.insert(Integer.parseInt(num[1]), num[2]);
+                    System.out.println(num[2] + " was inserted");
                     break;
 
                 case "search":
