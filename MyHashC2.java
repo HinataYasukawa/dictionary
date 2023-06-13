@@ -29,14 +29,9 @@ class MyHashC2 {
         return o;
     }
 
-    public int delete(String num) {
+    public boolean delete(String num) {
         boolean suc = Main.data.remove(num);
-        if (suc) {
-            int i = search(num);
-            return i;
-        } else {
-            return -1;
-        }
+        return suc;
     }
 
     public void showcmd() {
@@ -44,6 +39,7 @@ class MyHashC2 {
         System.out.println("inserto");
         System.out.println("search");
         System.out.println("delete");
+        System.out.println("show");
         System.out.println("showcmd");
         System.out.println("quit");
     }
